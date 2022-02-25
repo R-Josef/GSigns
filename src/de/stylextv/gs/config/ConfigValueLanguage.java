@@ -69,10 +69,10 @@ public class ConfigValueLanguage extends ConfigValue<String> {
 	@Override
 	public ItemStack getItemStack() {
 		ArrayList<String> list = new ArrayList<String>();
-		for(String s : getDescription()) list.add("ง7"+LanguageManager.parseMsg(s));
+		for(String s : getDescription()) list.add("ยง7"+LanguageManager.parseMsg(s));
 		list.add("");
-		list.add("ง7"+LanguageManager.parseMsg("trans.config.currentvalue", getValue()));
-		return ItemUtil.createItemStack(textures[currentIndex], "งeงl"+LanguageManager.parseMsg(getName()), list);
+		list.add("ยง7"+LanguageManager.parseMsg("trans.config.currentvalue", getValue()));
+		return ItemUtil.createItemStack(textures[currentIndex], "ยงeยงl"+LanguageManager.parseMsg(getName()), list);
 	}
 	@Override
 	public ItemStack getLeftButton() {

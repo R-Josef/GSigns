@@ -51,12 +51,12 @@ public class ItemUtil {
 		Material comparatorMaterial;
 		if(WorldUtil.getMcVersion() < WorldUtil.MCVERSION_1_13) {
 			comparatorMaterial = Material.valueOf("REDSTONE_COMPARATOR");
-			BLANK = createItemStack(Material.valueOf("STAINED_GLASS_PANE"), 15, "งr");
+			BLANK = createItemStack(Material.valueOf("STAINED_GLASS_PANE"), 15, "ยงr");
 			SIGN_PLAY = createItemStack(Material.valueOf("INK_SACK"), 8, LanguageManager.parseMsg("trans.item.play.name"), LanguageManager.parseMsg("trans.item.play.desc1"), LanguageManager.parseMsg("trans.item.play.desc2"));
 			SIGN_PAUSE = createItemStack(Material.valueOf("INK_SACK"), 10, LanguageManager.parseMsg("trans.item.pause.name"), LanguageManager.parseMsg("trans.item.pause.desc1"), LanguageManager.parseMsg("trans.item.pause.desc2"));
 		} else {
 			comparatorMaterial = Material.COMPARATOR;
-			BLANK = createItemStack(Material.BLACK_STAINED_GLASS_PANE, "งr");
+			BLANK = createItemStack(Material.BLACK_STAINED_GLASS_PANE, "ยงr");
 			SIGN_PLAY = createItemStack(Material.GRAY_DYE, LanguageManager.parseMsg("trans.item.play.name"), LanguageManager.parseMsg("trans.item.play.desc1"), LanguageManager.parseMsg("trans.item.play.desc2"));
 			SIGN_PAUSE = createItemStack(Material.LIME_DYE, LanguageManager.parseMsg("trans.item.pause.name"), LanguageManager.parseMsg("trans.item.pause.desc1"), LanguageManager.parseMsg("trans.item.pause.desc2"));
 		}
@@ -91,11 +91,11 @@ public class ItemUtil {
 			updateTexture = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmNlZjlhYTE0ZTg4NDc3M2VhYzEzNGE0ZWU4OTcyMDYzZjQ2NmRlNjc4MzYzY2Y3YjFhMjFhODViNyJ9fX0=";
 		} else if(month == 12 && day == 31) {
 			updateTexture = null;
-			SETTINGS_UPDATE = createItemStack(Material.FIREWORK_ROCKET, LanguageManager.parseMsg("trans.item.update.name"), LanguageManager.parseMsg("trans.item.update.desc1"), LanguageManager.parseMsg("trans.item.update.desc2"), LanguageManager.parseMsg("trans.item.update.desc3"), LanguageManager.parseMsg("trans.item.update.desc4"), "", "ง8* Happy New Year *", "");
+			SETTINGS_UPDATE = createItemStack(Material.FIREWORK_ROCKET, LanguageManager.parseMsg("trans.item.update.name"), LanguageManager.parseMsg("trans.item.update.desc1"), LanguageManager.parseMsg("trans.item.update.desc2"), LanguageManager.parseMsg("trans.item.update.desc3"), LanguageManager.parseMsg("trans.item.update.desc4"), "", "ยง8* Happy New Year *", "");
 		}
 		if(updateTexture!=null) {
 			if(msg == null) SETTINGS_UPDATE = createItemStack(updateTexture, LanguageManager.parseMsg("trans.item.update.name"), LanguageManager.parseMsg("trans.item.update.desc1"), LanguageManager.parseMsg("trans.item.update.desc2"), LanguageManager.parseMsg("trans.item.update.desc3"), LanguageManager.parseMsg("trans.item.update.desc4"));
-			else SETTINGS_UPDATE = createItemStack(updateTexture, LanguageManager.parseMsg("trans.item.update.name"), LanguageManager.parseMsg("trans.item.update.desc1"), LanguageManager.parseMsg("trans.item.update.desc2"), LanguageManager.parseMsg("trans.item.update.desc3"), LanguageManager.parseMsg("trans.item.update.desc4"), "", "ง8"+msg, "");
+			else SETTINGS_UPDATE = createItemStack(updateTexture, LanguageManager.parseMsg("trans.item.update.name"), LanguageManager.parseMsg("trans.item.update.desc1"), LanguageManager.parseMsg("trans.item.update.desc2"), LanguageManager.parseMsg("trans.item.update.desc3"), LanguageManager.parseMsg("trans.item.update.desc4"), "", "ยง8"+msg, "");
 		}
 		
 		CONFIG_DEFAULT = createItemStack("eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmE4NTk3MWZiMTNiZjBiNzhlYjlmOTZiMmJkY2UxYTExMzMxMzczZGUzMGQ5MjM5ZThiYzA2YTI5MTJjNGE0In19fQ==", LanguageManager.parseMsg("trans.item.restoreconfig.name"), LanguageManager.parseMsg("trans.item.restoreconfig.desc1"), LanguageManager.parseMsg("trans.item.restoreconfig.desc2"));

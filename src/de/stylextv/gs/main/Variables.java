@@ -7,8 +7,8 @@ public class Variables {
 	
 	public static String NAME="GSigns";
 	
-	public static String COLOR1="§d";
-	public static String COLOR2="§5";
+	public static String COLOR1="Â§d";
+	public static String COLOR2="Â§5";
 	
 	public static String PREFIX;
 	public static String PREFIX_CONSOLE=NAME+" | ";
@@ -21,7 +21,7 @@ public class Variables {
 			COLOR1 = ChatColor.of("#E91E63").toString();
 			COLOR2 = ChatColor.of("#89133C").toString();
 		}
-		PREFIX=COLOR1+"§lGS §8> §7";
+		PREFIX=COLOR1+"Â§lGS Â§8> Â§7";
 	}
 	
 }
